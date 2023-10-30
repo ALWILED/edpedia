@@ -1,24 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap');
 
-/* dark blue #0d1544
-light blue #22d6f9
-normal blue #2193d0
-rather dark blue #0047b4 */
+
 
 * {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
-    background-color:#0d1544;
+    background-color:#fefff5;
 }
 
 .page {
-    margin: 0 2em;
+    margin: 0.5em 3em;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    gap: 3em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(73, 73, 73); 
+  }
+
+/* navbar */
 
 .logo {
     font-family: Poppins;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 5em;
+    color: #0d5c7b;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-decoration: none;
 }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding-bottom: 3em;
+}
+
+.search-icon {
+    width: 1.3em;
+    height: auto;
+    align-self: center;
+}
+
+.cart-icon {
+    width: 2em;
+    flex: 0 1 auto;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex: 1 0 auto;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.searchbar {
+    margin-left: 10px;
+    width: auto;
+    height: 2.5em;
+    display: flex;
+    padding: 0 10px;
+    border: solid #0d5c7b 3px;
+    border-radius: 10px;
+    gap: 10px;
+    flex: 1 0 auto;
+}
+
+input:focus {
+    outline: none;
+    align-self: center;
+}
+
+.search-text {
+    font-size: 15px;
+    border: none;
+    height: 2em;
+    align-self: center;
+}
+
+.log-in {
+    padding: 0 16px;
+    border: solid #0d5c7b 3px;
+    border-radius: 10px;
+    height: 3em;
+    align-items: center;
+    cursor: pointer;
+    font-family: Poppins;
+    color: #0d5c7b;
+    font-size: 15px;
+}
+
+.sign-up {
+    padding: 0 16px;
+    border: solid #0d5c7b 3px;
+    border-radius: 10px;
+    height: 3em;
+    align-items: center;
+    cursor: pointer;
+    font-family: Poppins;
+    color: #fefff5;
+    font-size: 15px;
+    background-color: #0d5c7b;
+}
+
+.banner-box {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: end;
+    margin: 1em 0 0 2em;
+}
+
+.banner {
+    width: 78vw;
+}
+
+/* Left side */
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    border: solid 1px rgb(218, 218, 218);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    flex: 0 0 auto;
+}
+
+.left-top-title {
+    border-radius: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-up {
+    padding: 20px;
+    width: 1.5em;
+    border-radius: inherit;
+}
+
+.categories-title {
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: inherit;
+}
+
+.cate-ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+li {
+    width: 100%;
+    list-style: none;
+    margin: 5px;
+    font-size: 19px;
+    height: 34px;
+    white-space: nowrap;
+}
+
+.wallet-title {
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: inherit;
+}
+
+.paypal-logo {
+    width: 2em;
+}
+
+.banner-box {
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex: 1 1 0;
+}
+
+
